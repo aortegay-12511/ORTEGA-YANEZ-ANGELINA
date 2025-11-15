@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!--comienzo de la estructura del codigo html:5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi Primera Pagina Web </title><!--title es el titulo que lleva mi pagina web en el sitio-->
+    <link rel="icon" href="iconos/mundo.png" type="icon/x-icon"/>
+    <!--termina la cabecera del sitio-->
+</head> 
+<!-- empieza el cuerpo del sitio web-->
+<body>
+     <!--la etiqueta -- header -- se utiliza para el contenido de la pagina-->
+     <header>
+        <!--la etiqueta --h1-- es para mostrar el titulo en el cuerpo de la pagina-->
+        <h1>Ortega Yanez Angelina Gabriela</h1> 
+         <!--p se utiliza para redactar parrafos de texto-->
+         <p> "Toma lo mejor que existe y mejóralo. Si no existe, diséñalo" </p>
+    </header>
+<img src="imagenes/5bsnk1odanvgsnd7xaixkbr8rvfi.webp" width="10%" alt="Presentacion Personal"/>
+<nav>
+    <!-- Menú de navegación -->
+    <li><a href="#sobremi">Sobre mí</a></li>
+</nav>
+
+<section id="sobremi"></section>
+
+<strong>
+    Estudiante responsable,
+    <em>con buena actitud para el trato con clientes</em>
+    capacidad para <mark>trabajar en equipo </mark> y aprender rápido
+</strong>
+<ul> 
+    <li> Destacar las habilidades y competencias </li>
+    <li> Logros cuantificables</li>
+    <li> Objetivos profesionales</li>
+</ul>
+<table border="1">
+    <thead>
+        <tr>
+<th>Habilidades</th>
+<th>Nivel</th>
+<th> Funcion </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Html</td>
+            <td>Avanzado</td> <br>
+            <td>&nbsp; &nbsp;Interaccion con el usuario</td>
+        </tr>
+        <tr>
+            <td>Css</td>
+            <td>Avanzado</td> <br>
+            <td>&nbsp; &nbsp;Interaccion con el usuario</td>
+        </tr>
+        <td> Js</td>
+        <td>Intermedio</td>
+        <td>&nbsp; &nbsp;Interaccion con el usuario</td>
+    </tbody>
+    <tfoot> 
+        <tr>
+            <td colspan="2">Total de habilidades </td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table> <br>
+<audio src="audio/audio1.1.mp3" preload="none" controls ></audio> 
+<form id="contactForm" action="#" method="post" novalidate> <br>
+
+    <!-- Validación con atributos como required, type, min, etc. -->
+
+    <!-- Nombre -->
+    <label for="nombre">Nombre completo*</label>
+    <input
+      id="nombre"
+      name="nombre"
+      type="text"
+      required
+      minlength="3"
+      maxlength="80"
+      pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$"
+      placeholder="Ej. Juan Pérez"
+    />
+
+    <!-- Correo -->
+    <label for="correo">Correo electrónico*</label>
+    <input
+      id="correo"
+      name="correo"
+      type="email"
+      required
+      placeholder="tu@ejemplo.com"
+    />
+
+    <!-- Edad -->
+    <label for="edad">Edad*</label>
+    <input
+      id="edad"
+      name="edad"
+      type="number"
+      required
+      min="1"
+      max="120"
+      step="1"
+      placeholder="18"
+    /> <br>
+
+    <!-- Género -->
+     <br> <label>Género*</label>
+    <div class="radio-group" role="radiogroup" aria-labelledby="generoLabel">
+      <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+      <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
+      <label><input type="radio" name="genero" value="otro" required> Otro</label>
+      <label><input type="radio" name="genero" value="prefiero no decir" required> Prefiero no decir</label>
+    </div>
+
+    <!-- Intereses -->
+   <br> <label>Intereses </label>
+    <div class="checkbox-group" id="interesesGroup">
+      <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+      <label><input type="checkbox" name="intereses" value="musica"> Música</label>
+      <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label>
+      <label><input type="checkbox" name="intereses" value="Juegos extremos"> Juegos extremos</label>
+      <label><input type="checkbox" name="intereses" value="Desarrollo personal"> Desarrollo personal</label>
+    </div>
+    <div id="interesesError" class="error">Selecciona al menos un interés.</div> <br>
+
+    <!-- Comentarios -->
+    <label for="comentarios">Comentarios*</label>
+    <textarea
+      id="comentarios"
+      name="comentarios"
+      required
+      minlength="10"
+      maxlength="500"
+      placeholder="Escribe tus comentarios (mínimo 10 caracteres)"
+      rows="5"
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+<footer>
+  <p>&copy; 2025 Todos los derechos reservados.</p>
+
+  <p>Sígueme en redes sociales:</p>
+  <ul>
+    <li><a href="https://www.facebook.com/angelina.ortega.yanez.2025" target="_blank">Facebook</a></li>
+    <li><a href="https://www.instagram.com/angelinaortegayanez?igsh=MXgzNGhoZnhjdW5jaQ==" target="_blank">Instagram</a></li>
+    <li><a href="https://x.com/ortega_ang16549" target="_blank">Twitter</a></li>
+  </ul>
+</footer>
+
+
+</body>
+</html>
